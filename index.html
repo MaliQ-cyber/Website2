@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Muhammad Ali Qamar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Muhammad Ali Qamar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/WhatsApp Image 2024-09-21 at 18.42.04.jpeg" alt="Muhammad Ali profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ali Qamar</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/Untitled1_20240920221301')"
+                >Download CV
+            </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'"
+                >Contact Info
+            </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assests/linkedin.png" 
+                alt="My linkedin Profile"
+                class="icon" 
+                onclick="location.href='https://linkedin.com/'">
+                <img src="./assests/github.png" 
+                alt="My Github Profile"
+                class="icon" 
+                onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="assests/WhatsApp Image 2024-09-21 at 18.45.16.jpeg" 
+                    alt="Profile picture"
+                    class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="assests/experience.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <h3>Experience</h3>
+                            <p>3+ years <br>Coding Experience</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="assests/education.png" 
+                            alt="Education icon"
+                            class="icon">
+                            <h3>Education</h3>
+                            <p>Further Maths, Physics <br>CS, Maths A-levels</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>I am a creative and tech enthusiast with a passion for coding, robotics, and design. At 14, I wrote a book on artificial intelligence, which sparked my love for technology. I enjoy learning new coding languages and am currently pursuing a Harvard computer science certificate to further expand my knowledge.
+                            I have had the privilege of studying at Eton College, where I developed my public speaking and leadership skills. As a graphic designer, I have led design projects and completed internships, learning the value of teamwork and adaptability. I am also deeply interested in robotics and how AI can push boundaries. Plus, I like playing football and am known for being a nice guy who is always up for helping out.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>SAAS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Java Script</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>C</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Valuable Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Graphic Designer</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Marketing</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Public Speaking</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Author</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>3D Designer</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Robotics</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assests/Untitled design.png" alt="Project 1"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                        Download Book
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://www.lulu.com/shop/muhammad-ali-qamar/revolutionising-the-concept-of-artificial-intelligence/hardcover/product-w4vgeyg.html?q=Revolutionising+the+concept+of+AI&page=1&pageSize=4'">
+                        Buy Book
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assests/cs50.jpeg" alt="Project 2"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/MaliQ-cyber'">
+                        View Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/MaliQ-cyber'">
+                        Projects
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assests/room.png" alt="Project 3"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://www.instagram.com/alii.qmar/'">
+                        View Designs
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://www.instagram.com/alii.qmar/'">
+                        Contact
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/email.png" 
+                alt="Email icon" 
+                class="icon contact-icon">
+                <p><a href="mailto:maliqamar1286@gmail.com">maliqamar1286@gmail.com</a>
+                </p>
+            <div class="contact-info-container">
+                <img src="./assests/instagram-logo-instagram-icon-transparent-free-png.webp" 
+                alt="Instagram icon" 
+                class="icon contact-icon instagram-icon">
+                <p><a href="https://www.instagram.com/alii.qmar/">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> 
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ali Qamar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
